@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
    Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Scam App',
-      home: StartPage(), // 确保这里指向你的主页
+      home: StartPage(),
    );
   }
 }
@@ -39,7 +39,7 @@ class StartPage extends StatelessWidget {
                   width: 500,
                     child: Container(
                       decoration: BoxDecoration(
-                        gradient: RadialGradient(colors: [Appcolor.secondColor,Appcolor.backgroundColor]),
+                        gradient: RadialGradient(colors: [Appcolor.grey3,Appcolor.backgroundColor]),
                       ),
                     
 
@@ -63,7 +63,7 @@ class StartPage extends StatelessWidget {
                   ),
                 ),
                 ),
-                Text('That is a scam apps, Click button to start to scam other people',
+                Text('Click button to jump to home page',
                 style: TextStyle(
                   color: Colors.grey[300] 
                   ),
