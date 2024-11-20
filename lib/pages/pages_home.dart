@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testb/pages/pages_ssn.dart';
 import '../assets/colors.dart';
 import './pages_infor.dart';
 import '../main.dart';
@@ -77,10 +78,16 @@ class PagesHome extends StatelessWidget {
                   backgroundColor: Colors.red,
                   backgroundImage: AssetImage('assets/images/monitor.png'),
                 ),),
-                CircleAvatar(
-                  radius: 20,
-                  backgroundImage: AssetImage('assets/images/right-arrow.png'),
-                  backgroundColor: Colors.white
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(context, 
+                    MaterialPageRoute(builder: (context)=>PagesSSN()),
+                  );},
+                  child: CircleAvatar(
+                    radius: 20,
+                    backgroundImage: AssetImage('assets/images/right-arrow.png'),
+                    backgroundColor: Colors.white
+                  ),
                 ),
                 GestureDetector(
                   onTap: (){
